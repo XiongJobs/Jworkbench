@@ -1,0 +1,15 @@
+
+package test;
+
+
+public class Person {
+
+	public Person() {
+		System.out.println("man a person");
+	}
+	
+	public void say() {
+		System.out.println("person say");
+	}
+
+}

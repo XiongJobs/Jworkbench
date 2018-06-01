@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;tread.ThreadYield&apos; to &apos;ThreadPrio&apos;&#x0D;&#x0A;- Original project: &apos;FirstReturn&apos;&#x0D;&#x0A;- Original element: &apos;tread.ThreadYield&apos;&#x0D;&#x0A;- Renamed element: &apos;tread.ThreadPrio&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ThreadYield&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;tread{ThreadYield.java[ThreadYield" matchStrategy="1" name="ThreadPrio" qualified="false" references="true" similarDeclarations="false" stamp="1525425790321" textual="false" version="1.0"/>
+</session>

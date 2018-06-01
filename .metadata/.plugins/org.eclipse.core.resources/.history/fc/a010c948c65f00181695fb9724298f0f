@@ -1,0 +1,13 @@
+package reflectstu;
+
+public class Mainpro {
+	
+	public static void main(String[] args) {
+		Class cl=Car.class;
+		Class ca=new Car().getClass();
+		
+		System.out.println(ca.getName());
+		System.out.println(ca.getSimpleName());
+		System.out.println(ca.getCanonicalName());
+	}
+}

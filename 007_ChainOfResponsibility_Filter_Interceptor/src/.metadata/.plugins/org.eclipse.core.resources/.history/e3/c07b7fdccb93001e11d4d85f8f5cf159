@@ -1,0 +1,9 @@
+package com.bjsxt.dp.filter;
+
+public class MsgProcessor {
+	String msg;
+	
+	public String process() {
+		
+	}
+}

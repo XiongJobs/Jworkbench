@@ -1,0 +1,11 @@
+package com.bjsxt.dp.filter;
+
+public class FaceFilter implements Filter {
+
+	@Override
+	public String doFilter(String str) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

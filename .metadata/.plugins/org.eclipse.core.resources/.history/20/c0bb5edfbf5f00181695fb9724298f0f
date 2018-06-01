@@ -1,0 +1,9 @@
+package reflectstu;
+
+public class Mainpro {
+	
+	public static void main(String[] args) {
+		Class cl=Car.class;
+		
+	}
+}

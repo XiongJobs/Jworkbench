@@ -1,0 +1,8 @@
+package com.bjsxt.dp.filter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FilterChain {
+	List<Filter> filters = new ArrayList<Filter>();
+}
