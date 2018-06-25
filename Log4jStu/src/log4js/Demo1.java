@@ -8,7 +8,7 @@ public class Demo1 {
 
 	public static void main(String[] args) {
 		Logger logger = Logger.getLogger(Demo1.class);
-        
+   
         //使用默认的配置信息，不需要写log4j.properties
         BasicConfigurator.configure();
         
