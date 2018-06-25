@@ -11,7 +11,7 @@ public class CodeCounter {
 	static long whiteLines = 0;
 	
 	public static void main(String[] args) {
-		File f = new File("D:\\share\\JavaProjects\\TankWar1.9.11\\src");
+		File f = new File("D:\\Player\\PotPlayer X64");
 		File[] codeFiles = f.listFiles();
 		for(File child : codeFiles){
 			if(child.getName().matches(".*\\.java$")) {
