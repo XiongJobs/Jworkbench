@@ -6565,3 +6565,89 @@ java.net.ConnectException: Connection timed out: connect
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-07-06 11:31:18.544
 !MESSAGE No repository found at http://www.pramati.com/downloads/eclipse/updates/.
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-07-06 17:15:05.242
+!MESSAGE Transport Error: Cannot get remote repository refs.
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: 1324406183%252540qq.com@github.com:XiongJobs/Network.git: Auth fail
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:222)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:161)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.components.RefSpecPage$3.run(RefSpecPage.java:260)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: org.eclipse.jgit.errors.TransportException: 1324406183%252540qq.com@github.com:XiongJobs/Network.git: Auth fail
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:183)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:140)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:280)
+	at org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:170)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:200)
+	... 4 more
+Caused by: com.jcraft.jsch.JSchException: Auth fail
+	at com.jcraft.jsch.Session.connect(Session.java:519)
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:137)
+	... 8 more
+
+!ENTRY org.eclipse.egit.core 4 0 2018-07-06 17:34:51.024
+!MESSAGE An exception occurred during push on URI git@github.com:XiongJobs/Network.git: git@github.com:XiongJobs/Network.git: Packing cancelled during objects writing
+!STACK 0
+org.eclipse.jgit.errors.TransportException: git@github.com:XiongJobs/Network.git: Packing cancelled during objects writing
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:239)
+	at org.eclipse.jgit.transport.BasePackPushConnection.push(BasePackPushConnection.java:170)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:172)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1346)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.io.IOException: Packing cancelled during objects writing
+	at org.eclipse.jgit.internal.storage.pack.PackOutputStream.write(PackOutputStream.java:126)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.DeflaterOutputStream.write(DeflaterOutputStream.java:211)
+	at org.eclipse.jgit.lib.ObjectLoader.copyTo(ObjectLoader.java:263)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeWholeObjectDeflate(PackWriter.java:1700)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjectImpl(PackWriter.java:1678)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObject(PackWriter.java:1621)
+	at org.eclipse.jgit.internal.storage.pack.PackOutputStream.writeObject(PackOutputStream.java:171)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.writeObjects(WindowCursor.java:229)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjects(PackWriter.java:1609)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjects(PackWriter.java:1597)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writePack(PackWriter.java:1154)
+	at org.eclipse.jgit.transport.BasePackPushConnection.writePack(BasePackPushConnection.java:362)
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:219)
+	... 7 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-07-06 17:34:51.030
+!MESSAGE Can't connect to any repository: git@github.com:XiongJobs/Network.git (git@github.com:XiongJobs/Network.git: Packing cancelled during objects writing)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-07-06 17:39:36.702
+!MESSAGE An exception occurred during push on URI https://github.com/XiongJobs/Network.git: https://github.com/XiongJobs/Network.git: cannot open git-receive-pack
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/XiongJobs/Network.git: cannot open git-receive-pack
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:587)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:438)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1346)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:211)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:559)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:347)
+	at org.eclipse.jgit.transport.http.JDKHttpConnection.getResponseCode(JDKHttpConnection.java:108)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:207)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:501)
+	... 6 more
