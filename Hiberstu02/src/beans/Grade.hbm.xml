@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-9-4 17:37:53 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.Grade" table="GRADE">
+        <id name="gid" type="int">
+            <column name="GID" />
+            <generator class="increment" />
+        </id>
+        <property name="gname" type="java.lang.String">
+            <column name="GNAME" length="20" not-null="true"/>
+        </property>
+        <property name="gdesc" type="java.lang.String">
+            <column name="GDESC" />
+        </property>
+        <!-- 配置一对多关系 -->
+        <set name="stus" table="STUDENTS" inverse="true" lazy="true" cascade="save-update">
+        	<!-- 指定关联的外键 -->
+            <key>
+                <column name="GID" />
+            </key>
+            <one-to-many class="beans.Students" />
+        </set>
+    </class>
+</hibernate-mapping>

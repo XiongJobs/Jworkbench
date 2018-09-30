@@ -33,7 +33,11 @@ public class TestServer extends HttpServlet {
 		response.setHeader("Content-Type","text/html;charset=UTF-8");
 		PrintWriter out=response.getWriter();
 		out.append("Served at: ").append(request.getContextPath());
-		out.write("<p>this is p ±Í«©</p>");
+		out.println("<p>this is p ±Í«©</p>");
+		out.println("serv contstis: "+this.getServletConfig().getServletContext()
+				.getInitParameter("cont"));
+
+
 	}
 
 	/**
