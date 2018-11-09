@@ -17,9 +17,9 @@ public class Test {
 		deletStu();
 	}
 	
-	//½«Ñ§ÉúÌí¼Óµ½°à¼¶
+	//å°†å­¦ç”Ÿæ·»åŠ åˆ°ç­çº§å¹¶å‚¨å­˜
 	public static void add() {
-		Grade grade=new Grade("J1class", "JavaÒ»°à");
+		Grade grade=new Grade("J1class", "JavaOneClass");
 		Students stu1=new Students("Tony","male");
 		Students stu2=new Students("lucy","female");
 		
@@ -33,10 +33,10 @@ public class Test {
 		session.save(stu1);
 		session.save(stu2);
 		tx.commit();
-		session.close();   //¹Ø±Õ»á»°
+		session.close();   //å…³é—­ä¼šè¯
 	}
 	
-	//²éÑ¯°à¼¶ÖĞ°üº¬µÄÑ§Éú
+	//æŸ¥è¯¢ç­çº§ä¸­åŒ…å«çš„å­¦ç”Ÿ
 	public static void findStudents() {
 		Session session=HibernateUtil.getSession();
 		Grade grade=(Grade)session.get(Grade.class, 1);
@@ -48,12 +48,12 @@ public class Test {
 		for(Students stu:stus) {
 			System.out.println(stu.getSname()+","+stu.getSex());
 		}
-		session.close();   //¹Ø±Õ»á»°
+		session.close();   //å…³é—­ä¼šè¯
 	}
 	
-	//ĞŞ¸Ä°à¼¶ÖĞµÄÑ§ÉúĞÅÏ¢
+	//ä¿®æ”¹ç­çº§ä¸­å­¦ç”Ÿä¿¡æ¯
 	public static void update() {
-		Grade gra=new Grade("J2class", "Java¶ş°à");
+		Grade gra=new Grade("J2class", "JavaClassTow");
 		Session session=HibernateUtil.getSession();
 		Transaction trx=session.beginTransaction();
 		
@@ -64,7 +64,7 @@ public class Test {
 		session.close();
 	}
 	
-	//É¾³ı°à¼¶ ÖĞµÄÑ§ÉúĞÅÏ¢
+	//åˆ é™¤ç­çº§ä¸­çš„å­¦ç”Ÿä¿¡æ¯
 	
 	public static void deletStu() {
 		Session session=HibernateUtil.getSession();

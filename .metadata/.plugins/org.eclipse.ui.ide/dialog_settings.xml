@@ -5,6 +5,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Programing\Jworkbench\SpringStu01"/>
 			<item value="E:\文件\Study\Java笔记\框架\Spring\Sorces\Demo\Spring"/>
 			<item value="D:\Programing\Jworkbench\006_Dynamic_Proxy_Spring_AOP"/>
 			<item value="D:\Programing\Jworkbench\007_ChainOfResponsibility_Filter_Interceptor"/>
@@ -21,6 +22,8 @@
 			<item value="org.eclipse.jst.j2ee.internal"/>
 			<item value="org.eclipse.wst.web.ui"/>
 		</list>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
 		<item value="false" key="FilterByLocation"/>

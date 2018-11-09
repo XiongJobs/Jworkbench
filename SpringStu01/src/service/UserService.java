@@ -6,6 +6,8 @@ import dao.UserDAO;
 public class UserService {
 	
 	private UserDAO userDAO;  
+	
+	
 	public void add(User user) {
 		userDAO.save(user);
 	}

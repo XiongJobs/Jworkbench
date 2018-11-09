@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 				   		
+			http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+	
+	<!-- 处理器映射 -->
+	
+	<!--  Bean名url处理器映射(默认映射) -->
+	<bean id="beanNameUrlHandlerMapping" 
+	class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping">
+	</bean>
+	
+	<!--  simpleUrlHandle处理器映射 -->
+	<bean id="simpleUrlHandlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/sh.action">homeController</prop>
+				<prop key="/a.action">homeController</prop>
+				<prop key="/b.action">homeController</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- 控制器类名处理器映射 --> 
+	<bean id="controllerClassNameHandlerMapping" 
+		class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping">
+	    <property name="order" value="2"/>
+	</bean> 
+	
+	
+	<!-- 控制器 -->				
+	<bean  id="homeController" name="/home.action" class="web.controler.HomeController"/>
+		
+	<!-- 内部资源视图解析器 -->	
+	<bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsps/"/>	<!-- 前缀 -->
+		<property name="suffix" value=".jsp"/>		<!-- 后缀 -->
+	</bean>
+	
+</beans>

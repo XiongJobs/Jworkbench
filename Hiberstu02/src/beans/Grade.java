@@ -9,7 +9,7 @@ public class Grade implements Serializable{
 	private int gid;
 	private String gname;
 	private String gdesc;
-	//ÔÚÒ»·½¶¨ÒåÒ»¸ö¶à·½¼¯ºÏ
+	//åœ¨ä¸€æ–¹å®šä¹‰ä¸€ä¸ªå¤šæ–¹é›†åˆ
 	private Set<Students> stus=new HashSet<Students>();
 	
 	public Grade() {

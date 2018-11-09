@@ -24,16 +24,16 @@ public class StudentTest {
 	
 	@Before
 	public void init() {
-		//´´½¨ÅäÖÃ¶ÔÏó
+		//åˆ›å»ºé…ç½®å¯¹è±¡
 		Configuration config=new Configuration().configure();
-		//´´½¨·şÎñ×¢²á¶ÔÏó
+		//åˆ›å»ºæœåŠ¡æ³¨å†Œå¯¹è±¡
 		ServiceRegistry serviceRegistry =new ServiceRegistryBuilder().
 				applySettings(config.getProperties()).buildServiceRegistry();
-		//´´½¨»á»°¹¤³§¶ÔÏó
+		//åˆ›å»ºä¼šè¯å·¥å‚å¯¹è±¡
 		sessionFactory=config.buildSessionFactory(serviceRegistry);
-		//»á»°¶ÔÏó
+		//ä¼šè¯å¯¹è±¡
 		session=sessionFactory.openSession();
-		//¿ªÆôÊÂÎñ
+		//å¼€å¯äº‹åŠ¡
 		transaction=session.beginTransaction();
 	}
 	
@@ -42,38 +42,38 @@ public class StudentTest {
 	public void testSaveStudent() {
 		 Adress add=new Adress("350004","2143532","fujian");
 		 Student stu=new Student(1,"tom","male",new Date(),add);
-		 session.save(stu); //±£´æ¶ÔÏóµ½Êı¾İ¿â
+		 session.save(stu); //ä¿å­˜å¯¹è±¡
 	}
 	
 	@Test
-	public void testGetStudent() {   //get·½Ê½»ñÈ¡Ñ§Éú
-		Student stu= (Student)session.get(Student.class, 1);   //1ÎªÖ÷¼ü
+	public void testGetStudent() {   //getæ–¹å¼è·å–å­¦ç”Ÿ
+		Student stu= (Student)session.get(Student.class, 1);   //1ä¸ºä¸»é”®
 		System.out.println(stu);
 	}
 	
 	@Test
-	public void testLoadStudent() {  //load·½Ê½»ñÈ¡Ñ§Éú
-		Student stu= (Student)session.load(Student.class, 1); //1ÎªÖ÷¼ü
+	public void testLoadStudent() {  //loadæ–¹å¼è·å–å­¦ç”Ÿ
+		Student stu= (Student)session.load(Student.class, 1); //1ä¸ºä¸»é”®
 		System.out.println("load student:" +stu);
 	}
 	
 	@Test
-	public void testUpdateStudent() {  //¸üĞÂÑ§ÉúĞÅÏ¢
+	public void testUpdateStudent() {  //æ›´æ–°å­¦ç”Ÿä¿¡æ¯
 		Student stu=(Student)session.get(Student.class, 1);
 		stu.setSname("setboy");
 		session.update(stu);
 	}
 	
 	@Test
-	public void testDeleteStudent() {  //É¾³ıÑ§ÉúĞÅÏ¢
+	public void testDeleteStudent() {  //åˆ é™¤å­¦ç”Ÿä¿¡æ¯
 		Student stu=(Student)session.get(Student.class, 1);
 		session.delete(stu);
 	}
 	
 	@After
 	public void destory() {
-		transaction.commit(); //Ìá½»ÊÂÎñ
-		session.close();   //¹Ø±Õ»á»°
-		sessionFactory.close(); //¹Ø±Õ»á»°¹¤³§
+		transaction.commit(); //æäº¤äº‹åŠ¡
+		session.close();   //å…³é—­äº‹åŠ¡
+		sessionFactory.close(); //å…³é—­ä¼šè¯å·¥å‚
 	}
 }

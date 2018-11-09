@@ -17,18 +17,18 @@ public class HibernateUtil {
 		sessionFactory=config.buildSessionFactory(serviceRegistry);
 	}
 	
-	//获取SessionFactory
+	//鑾峰彇SessionFactory
 	public static SessionFactory getSessionFactory() {
 		return sessionFactory;
 	}
 	
-	//获取session
+	//鑾峰彇session
 	public static Session getSession() {
 		session=sessionFactory.openSession();
 		return session;
 	}
 	
-	//关闭session
+	//鍏抽棴session
 	public static void closeSession(Session session) {
 		if(session !=null) {
 			session.close();

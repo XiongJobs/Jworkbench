@@ -8,7 +8,13 @@
   </bean>
 	
   <bean id="userService" class="service.UserService">
-  	<property name="userDAO" ref="u" /> 		
+  	<!-- setter注入 -->
+  	<property name="userDAO" ref="u" /> 	
+  	
+<!--   	构造方法注入
+  	<constructor-arg>
+  		<ref bean="u"/>
+  	</constructor-arg>	 -->
   </bean>
   
 

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="packs/spring/spring-aop-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-aop-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-aop-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-aspects-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-aspects-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-aspects-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-beans-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-beans-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-beans-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-context-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-context-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-context-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-context-support-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-context-support-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-context-support-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-core-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-core-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-core-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-expression-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-expression-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-expression-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-instrument-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-instrument-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-instrument-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-instrument-tomcat-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-instrument-tomcat-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-instrument-tomcat-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-jdbc-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-jdbc-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-jdbc-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-jms-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-jms-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-jms-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-messaging-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-messaging-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-messaging-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-orm-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-orm-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-orm-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-oxm-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-oxm-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-oxm-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-test-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-test-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-test-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-tx-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-tx-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-tx-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-web-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-web-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-web-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-webmvc-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-webmvc-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-webmvc-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-webmvc-portlet-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-webmvc-portlet-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-webmvc-portlet-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-websocket-4.3.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-websocket-4.3.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="packs/spring/spring-websocket-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="packs/junit/junit-4.5.jar"/>
+	<classpathentry kind="lib" path="packs/junit/commons-logging.jar"/>
+	<classpathentry kind="lib" path="packs/aspectj/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="packs/aspectj/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="packs/jdbc/mysql-connector-java-5.1.46-bin.jar"/>
+	<classpathentry kind="lib" path="packs/common/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="packs/common/commons-pool.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

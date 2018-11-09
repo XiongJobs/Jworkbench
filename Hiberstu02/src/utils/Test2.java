@@ -16,7 +16,7 @@ public class Test2 {
 	
 	
 	public static void Save() {
-		Grade grade=new Grade("J31class", "Java一三班");
+		Grade grade=new Grade("J31class", "Java涓夌彮");
 		Students stu3=new Students("Jun","male");
 		Students stu4=new Students("Komia","female");
 		
@@ -36,7 +36,7 @@ public class Test2 {
 		session.close();
 	}
 	
-	//查询学生所在班级的信息
+	//鑾峰彇瀛︾敓淇℃伅
 	public static void findStudent() {
 		Session session=HibernateUtil.getSession();
 		Students stu=(Students) session.get(Students.class,2);
